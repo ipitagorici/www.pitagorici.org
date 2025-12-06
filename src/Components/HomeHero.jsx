@@ -1,6 +1,7 @@
 import styles from './HomeHero.module.css'
 import Particles from './third-party/Particles/Particles'
 import Galaxy from './third-party/Galaxy/Galaxy'
+import LoadingSpinner from './LoadingSpinner'
 
 function HomeHero() {
     return (

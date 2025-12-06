@@ -1,6 +1,6 @@
 .spinner {
-    width: 128px;
-    transform-origin: center 45px;
+    width: 64px;
+    transform-origin: center 34px;
     animation: spinning 2s linear infinite;
 }
 
