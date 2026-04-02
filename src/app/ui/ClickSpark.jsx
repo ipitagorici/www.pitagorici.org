@@ -138,8 +138,9 @@ const ClickSpark = ({
         position: 'relative',
         width: '100%',
         height: '100%',
-        zIndex: 100,
+        zIndex: 200,
       }}
+      className='grow flex flex-col'
       onClick={handleClick}
     >
       <canvas

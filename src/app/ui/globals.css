@@ -137,6 +137,50 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, strong {
   text-shadow: 3px 3px 0 hsl(from var(--accent) h s 40%);
 }
 
+a {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  color: var(--accent);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.rfm-marquee {
+  display: flex;
+  gap: 1em;
+}
+
+[class*="accentify"]::before {
+	content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: inline-block;
+  mask: url("/imgs/accent.svg") 100% 100% no-repeat;
+  mask-size: cover;
+  background-color: var(--accent);
+  transform: rotate(-30deg);
+	left: -80px;
+	top: -70px;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
