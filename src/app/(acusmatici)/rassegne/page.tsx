@@ -1,6 +1,6 @@
 "use client"
-import { cn } from "../lib/utils";
-import EventCard from "../ui/components/EventCard";
+import { cn } from "../../lib/utils";
+import EventCard from "../../components/EventCard";
 
 export default function EventsList() {
     return <div className="-z-2">

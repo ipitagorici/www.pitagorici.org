@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { cn } from "../../lib/utils";
-import Badge from "./Badge";
+import { cn } from "../lib/utils";
+import Badge from "./ui/Badge";
 import { Clock2Icon, MapPinIcon } from "lucide-react";
 import Link from "next/link";
 

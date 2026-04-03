@@ -29,6 +29,7 @@ export default function useViewportSize(resizingHandler?: () => any) {
             }
         };
     }, []);
+    
     return { 
         viewportSize, 
         isAboveThreshold: (threshold: "sm" | "md" | "lg" | "xl" | "2xl"): boolean => {

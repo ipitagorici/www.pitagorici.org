@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
-import { cn } from "../../lib/utils";
-import { Article } from "../../types/Article";
+import { cn } from "../lib/utils";
+import { Article } from "../types/Article";
 import NewsCard from "./NewsCard";
 
 export default function DailyCarousel({ className }: { className?: string }) {

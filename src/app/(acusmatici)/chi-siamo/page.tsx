@@ -1,8 +1,8 @@
 "use client"
-import FullScreenSection from "../ui/components/FullScreenSection";
+import FullScreenSection from "../../components/FullScreenSection";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import { usePhotoGalleryLoader } from "../lib/usePhotoGalleryLoader";
+import { usePhotoGalleryLoader } from "../../lib/usePhotoGalleryLoader";
 
 export default function AboutUs() {
     const PHOTOS_QTY = 5

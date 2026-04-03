@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/app/ui/background/Grainient.jsx"  ],
+, "src/app/components/background/Grainient.jsx"  ],
   "exclude": ["node_modules"]
 }

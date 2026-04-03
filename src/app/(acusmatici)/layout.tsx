@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./ui/globals.css";
-import Navbar from "./ui/components/Navbar";
-import ClickSpark from "./ui/ClickSpark";
-import Footer from "./ui/components/Footer";
-import { Link } from "./types/Link";
-import { CalendarClockIcon, Home, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
-import Grainient from "./ui/background/Grainient";
+import "../components/globals.css";
+import Navbar from "../components/Navbar";
+import ClickSpark from "../components/ClickSpark";
+import Footer from "../components/Footer";
+import { CustomLinkType } from "../types/CustomLinkType";
+import { CalendarClockIcon, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
+import Grainient from "../components/background/Grainient";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const appLinks: Link[] = [
+  const appLinks: CustomLinkType[] = [
     { href: '/', label: 'Home', icon: <HomeIcon /> },
     { href: '/chi-siamo', label: 'Chi siamo', icon: <PersonStandingIcon /> },
     { href: '/rassegne', label: 'Rassegne', icon: <TheaterIcon /> },

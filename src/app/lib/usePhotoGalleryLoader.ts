@@ -10,7 +10,7 @@ export function usePhotoGalleryLoader(srcSet: string[], inputTargetRowHeight: nu
     const [targetRowHeight, setTargetRowHeight] = useState<number>()
     useEffect(() => {
         Promise.all(srcSet.map(rawSrc => new Promise((
-            resolve: ({ src, width, height }: GalleryPhoto) => void,
+            resolve: (photo: GalleryPhoto) => void,
             reject: (reason: string) => void
         ) => {
             const src = rawSrc

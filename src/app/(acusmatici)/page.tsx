@@ -1,12 +1,12 @@
 "use client"
-import FullScreenSection from "./ui/components/FullScreenSection";
+import FullScreenSection from "../components/FullScreenSection";
 import Image from "next/image";
-import Brand from "./ui/components/Brand";
-import DailyCarousel from "./ui/components/DailyCarousel";
-import useViewportSize from "./lib/useViewportSize";
+import Brand from "../components/Brand";
+import DailyCarousel from "../components/DailyCarousel";
+import useViewportSize from "../lib/useViewportSize";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import { usePhotoGalleryLoader } from "./lib/usePhotoGalleryLoader";
+import { usePhotoGalleryLoader } from "../lib/usePhotoGalleryLoader";
 
 export default function Home() {
   const pascalLogoDimension = {
@@ -23,7 +23,7 @@ export default function Home() {
       <FullScreenSection id="hero" className="flex-row text-center justify-center">
         <Brand size="xl" direction={viewportSizeObj.isAboveThreshold("lg") ? "horizontal" : "vertical"} />
       </FullScreenSection>
-      <FullScreenSection className="align-center justify-center grid grid-cols-1 lg:grid-cols-12 lg:gap-20 w-full px-10 lg:px-30">
+      <FullScreenSection className="align-center justify-center grid grid-cols-1 lg:grid-cols-12 lg:gap-20 w-full px-10 lg:px-30 2xl:px-50">
         <article className="lg:col-span-5 flex flex-col justify-center">
           <div className="flex flex-col md:flex-row items-center md:justify-center">
             <Image src={"/imgs/pascal-white-logo-no-bg.png"} className="m-auto h-fit" alt="ITT Pascal Logo" width={pascalLogoDimension.width / divider} height={pascalLogoDimension.height / divider} />
