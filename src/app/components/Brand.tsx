@@ -7,7 +7,7 @@ const LOGO_SIZE = {
     "sm": 64,
     "md": 64,
     "lg": 128,
-    "xl": 256,
+    "xl": 300,
     "xxl": 512
 }
 

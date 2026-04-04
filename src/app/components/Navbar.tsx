@@ -29,7 +29,7 @@ export default function Navbar({ links }: {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
     const [hideMenu, setHideMenu] = useState(viewportSize.width < 1024)
-    return <nav className="relative bg-black py-2 px-10 w-full lg:w-[75%] mx-auto sticky top-0 lg:top-5 lg:rounded-lg flex flex-col lg:flex-row lg:justify-between z-1">
+    return <nav className="relative bg-black py-2 px-10 w-full xl:w-[75%] mx-auto sticky top-0 xl:top-5 xl:rounded-lg flex flex-col lg:flex-row lg:justify-between z-1">
         <div className="flex justify-between items-center lg:inline-block">
             <Brand direction="horizontal" size="sm" />
             <button className="lg:hidden cursor-pointer" onClick={() => { setHideMenu((prev) => !prev) }}>

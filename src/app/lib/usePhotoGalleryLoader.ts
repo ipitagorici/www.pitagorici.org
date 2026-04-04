@@ -9,11 +9,10 @@ export function usePhotoGalleryLoader(srcSet: string[], inputTargetRowHeight: nu
     const [photos, setPhotos] = useState<readonly GalleryPhoto[]>([])
     const [targetRowHeight, setTargetRowHeight] = useState<number>()
     useEffect(() => {
-        Promise.all(srcSet.map(rawSrc => new Promise((
+        Promise.all(srcSet.map(src => new Promise((
             resolve: (photo: GalleryPhoto) => void,
             reject: (reason: string) => void
         ) => {
-            const src = rawSrc
             getImageMetadata(src, (error, img) => {
                 if (error) {
                     reject("Cannot load image " + src + "!")
