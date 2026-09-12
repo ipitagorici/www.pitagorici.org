@@ -138,13 +138,17 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, strong {
 }
 
 a {
-  display: inline-block;
-  position: relative;
-  top: 0;
   color: var(--accent);
 }
 
-a::after {
+a:not(.normal)
+{
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+
+a:not(.normal)::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -157,7 +161,7 @@ a::after {
   transition: transform 0.25s ease-out;
 }
 
-a:hover::after {
+a:not(.normal):hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

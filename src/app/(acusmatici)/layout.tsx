@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import ClickSpark from "../components/ClickSpark";
 import Footer from "../components/Footer";
 import { CustomLinkType } from "../types/CustomLinkType";
-import { CalendarClockIcon, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
+import { BookOpenIcon, CalendarClockIcon, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
 import Grainient from "../components/background/Grainient";
 
 const interFont = Inter({
@@ -27,6 +27,7 @@ export default function RootLayout({
     { href: '/chi-siamo', label: 'Chi siamo', icon: <PersonStandingIcon /> },
     { href: '/rassegne', label: 'Rassegne', icon: <TheaterIcon /> },
     { href: '/eventi-futuri', label: 'Eventi futuri', icon: <CalendarClockIcon /> },
+    // { href: '/blog', label: 'Blog', icon: <BookOpenIcon /> },
   ]
   return (
     <html

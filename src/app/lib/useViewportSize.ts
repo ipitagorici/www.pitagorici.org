@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 
-export default function useViewportSize(resizingHandler?: () => any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function useViewportSize(resizingHandler?: (...args: any) => any) {
     const [viewportSize, setViewportSize] = useState({
         width: 0,
         height: 0,

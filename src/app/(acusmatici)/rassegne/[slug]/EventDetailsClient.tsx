@@ -5,7 +5,7 @@ import { ArrowDownCircleIcon, CameraIcon, PaperclipIcon, TriangleIcon, VideoIcon
 import Badge from "../../../components/ui/Badge";
 import Link from "next/link";
 import { usePhotoGalleryLoader } from "../../../lib/usePhotoGalleryLoader";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
@@ -42,11 +42,13 @@ export default function EventDetailsClient({ slug }: { slug: string }) {
                 </div>
                 {
                     showArrowDown && 
-                    <ArrowDownCircleIcon className="absolute bottom-10 text-(--accent) scale-125 inline-block motion-safe:animate-bounce"/> 
+                    <Link href="#gallery" className="normal absolute bottom-10">
+                        <ArrowDownCircleIcon className="text-(--accent) scale-125 inline-block motion-safe:animate-bounce"/> 
+                    </Link>
                 }
             </div>
         </FullScreenSection>
-        <FullScreenSection className="pt-10 px-10 md:px-20 lg:px-50">
+        <FullScreenSection id="gallery" className="pt-10 px-10 md:px-20 lg:px-50">
             <article>
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h2 className="text-2xl md:text-4xl pb-5 w-fit">Galleria</h2>

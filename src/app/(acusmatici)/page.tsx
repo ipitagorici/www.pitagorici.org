@@ -31,12 +31,12 @@ export default function Home() {
             <Image src={"/imgs/pitagorici-logo.png"} className="mx-auto h-fit" alt="ITT Pascal Logo" width={pascalLogoDimension.width / divider} height={pascalLogoDimension.height / divider} />
           </div>
           <h3 className="text-3xl">
-            Una "congregazione" <br /> <span className="text-5xl">Made in Pascal</span>
+            Una &ldquo;congregazione&rdquo; <br /> <span className="text-5xl">Made in Pascal</span>
           </h3>
           <hr className="mb-8 mt-3" />
           <div className="flex flex-col gap-3">
             <p className="first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:ring-3 first-letter:p-2 first-letter:rounded "><strong>Notte Pitagorica</strong> — un progetto che parte dai banchi di scuola per generare un movimento di idee costruttivo e innovativo sulla matematica e sulla sua applicazione nella realtà di ogni giorno. </p>
-            <p>L'obiettivo è quello di <b>divulgare</b> la conoscenza scientifica in forma di spettacolo, unendo all’<b>indagine matematica</b> il fascino della <b>musica</b> e della <b>poesia</b>, suscitando nel pubblico quel senso di <b>stupore</b> che contraddistingue la <b>bellezza della scoperta</b>.</p>
+            <p>L&sdquo;obiettivo è quello di <b>divulgare</b> la conoscenza scientifica in forma di spettacolo, unendo all’<b>indagine matematica</b> il fascino della <b>musica</b> e della <b>poesia</b>, suscitando nel pubblico quel senso di <b>stupore</b> che contraddistingue la <b>bellezza della scoperta</b>.</p>
             <p>Protagonisti di questo viaggio sono <b>studenti</b> ed <b>ex studenti</b> del nostro istituto che, dialogando con i <b>docenti</b>, affrontano con <b>passione</b> e <b>competenza</b> questioni scientifiche che riflettono la <b>complessità</b> del reale e le <b>sfide</b> della nostra contemporaneità.</p>
           </div>
         </article>

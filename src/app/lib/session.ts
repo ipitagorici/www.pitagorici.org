@@ -30,8 +30,7 @@ export function encrypt(userID: string) {
  * @returns 
  */
 export function decrypt(userID: string) {
-    let decrypted = Array.from(normalizeString(userID))
-        .toReversed()
+    let decrypted = Array.from(normalizeString(userID)).toReversed()
     return decrypted
 }
 
