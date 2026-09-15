@@ -1,6 +1,6 @@
 "use client"
 import { PropsWithChildren } from "react";
-import { cn } from "../../lib/utils";
+import { cn } from "../../_lib/utils";
 
 export default function Badge({ className, children }: {
     className?: string

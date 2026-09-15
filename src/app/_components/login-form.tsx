@@ -1,20 +1,20 @@
 "use client"
-import { cn } from "@/src/app/lib/utils"
-import { Button } from "@/src/app/components/ui/button"
+import { cn } from "@/src/app/_lib/utils"
+import { Button } from "@/src/app/_components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/src/app/components/ui/card"
+} from "@/src/app/_components/ui/card"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/src/app/components/ui/field"
-import { Input } from "@/src/app/components/ui/input"
+} from "@/src/app/_components/ui/field"
+import { Input } from "@/src/app/_components/ui/input"
 
 export function LoginForm({
   className,

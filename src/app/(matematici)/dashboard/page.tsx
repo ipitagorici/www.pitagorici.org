@@ -1,9 +1,9 @@
 "use client"
 import { Table, MoreHorizontalIcon } from "lucide-react";
 import { DropdownMenu } from "radix-ui";
-import { Button } from "../../components/ui/button";
-import { DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from "../../components/ui/dropdown-menu";
-import { TableHeader, TableRow, TableHead, TableBody, TableCell } from "../../components/ui/table";
+import { Button } from "../../_components/ui/button";
+import { DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from "../../_components/ui/dropdown-menu";
+import { TableHeader, TableRow, TableHead, TableBody, TableCell } from "../../_components/ui/table";
 
 export default function Dashboard() {
     return <>

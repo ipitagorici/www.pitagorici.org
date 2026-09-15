@@ -1,9 +1,9 @@
 "use client"
 import { HeartIcon, MailIcon } from "lucide-react";
 import Brand from "./Brand";
-import { CustomLinkType } from "../types/CustomLinkType";
+import { CustomLinkType } from "../_types/CustomLinkType";
 import InstagramIcon from "./icons/InstagramIcon";
-import useViewportSize from "../lib/useViewportSize";
+import useViewportSize from "../_lib/useViewportSize";
 import Link from "next/link";
 
 export default function Footer({ links }: { links?: CustomLinkType[] }) {

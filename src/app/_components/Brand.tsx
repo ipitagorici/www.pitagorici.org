@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Brand.module.css";
-import { cn } from "../lib/utils";
+import { cn } from "../_lib/utils";
 import clsx from "clsx";
 
 const LOGO_SIZE = {

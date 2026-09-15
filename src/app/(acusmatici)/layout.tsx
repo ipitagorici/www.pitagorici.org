@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../components/globals.css";
-import Navbar from "../components/Navbar";
-import ClickSpark from "../components/ClickSpark";
-import Footer from "../components/Footer";
-import { CustomLinkType } from "../types/CustomLinkType";
-import { BookOpenIcon, CalendarClockIcon, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
-import Grainient from "../components/background/Grainient";
+import "./globals.css";
+import Navbar from "../_components/Navbar";
+import ClickSpark from "../_components/ClickSpark";
+import Footer from "../_components/Footer";
+import { CustomLinkType } from "../_types/CustomLinkType";
+import { CalendarClockIcon, HomeIcon, PersonStandingIcon, TheaterIcon } from "lucide-react";
+import Grainient from "../_components/background/Grainient";
 
 const interFont = Inter({
   variable: "--font-inter",
